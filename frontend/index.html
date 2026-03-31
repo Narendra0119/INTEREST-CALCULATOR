@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InterWise - Free Interest Calculator</title>
+
+<meta name="description" content="Free online interest calculator. Calculate simple and compound interest easily with InterWise.">
+
+<meta name="keywords" content="interest calculator, simple interest, compound interest, calculator India">
+
+<meta name="author" content="InterWise">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Interest Calculator</h1>
+<h2>Simple & Compound Interest</h2>
+
+  <label>Principal Amount (₹)</label>
+  <input type="number" id="principal" placeholder="Enter amount">
+
+  <label>Interest Rate (%)</label>
+  <input type="number" id="rate" placeholder="Enter rate">
+
+  <label>Time</label>
+  <input type="number" id="time" placeholder="Enter time">
+
+  <select id="timeUnit">
+    <option value="years">Years</option>
+    <option value="months">Months</option>
+  </select>
+
+  <label>Calculation Type</label>
+  <select id="type">
+    <option value="simple">Simple Interest</option>
+    <option value="compound">Compound Interest</option>
+  </select>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <div class="result-box">
+    <h3 id="interest"></h3>
+    <h3 id="total"></h3>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
