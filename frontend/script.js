@@ -5,7 +5,7 @@ async function calculate() {
     let type = document.getElementById("type").value;
     let unit = document.getElementById("timeUnit").value;
   
-    const res = await fetch("http://localhost:5000/calculate", {
+    const res = await fetch("https://interest-calculator-1u08.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
